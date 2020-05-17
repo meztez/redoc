@@ -4,10 +4,10 @@
 \name{redoc-package}
 \alias{redoc}
 \alias{redoc-package}
-\title{redoc: Generates Redoc documentation from an OAS Compliant API}
+\title{redoc: Generates Redoc documentation from an OpenAPI Specification}
 \description{
-Redoc is a collection of HTML, JavaScript, CSS and fonts assets that
-that generate Redoc documentation from an OAS compliant API.
+Redoc is a collection of HTML, JavaScript, CSS and fonts assets
+that generate Redoc documentation from an OpenAPI Specification.
 }
 \details{
 The main purpose of this package is to enable package authors to create

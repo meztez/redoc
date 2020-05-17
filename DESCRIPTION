@@ -1,6 +1,6 @@
 Package: redoc
 Type: Package
-Title: Generates 'Redoc' documentation from an OAS Compliant API
+Title: Generates 'Redoc' Documentation from an 'OpenAPI' Specification
 Version: 2.0.0.29
 Authors@R: c(
     person("Bruno", "Tremblay", email = "openr@neoxone.com", role = c("aut", "cre")),
@@ -12,8 +12,8 @@ Authors@R: c(
     )
 Maintainer: Bruno Tremblay <openr@neoxone.com>
 Description: A collection of 'HTML', 'JavaScript', 'CSS' and fonts
-  assets that generate 'Redoc' documentation from an OAS compliant API:
-  <https://redoc.ly/redoc/>.
+  assets that generate 'Redoc' documentation from an 'OpenAPI' Specification:
+   <https://redoc.ly/redoc/>.
 License: MIT + file LICENSE | Apache License 2.0
 Imports: jsonlite
 Encoding: UTF-8

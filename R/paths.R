@@ -40,7 +40,7 @@ redoc_index <- function() {
 #' Redoc Index File with OpenAPI Path
 #'
 #' Produces the content for a \code{index.html} file that will attempt to access a
-#' provided API path.
+#' provided OpenAPI Specification URL.
 #'
 #' @param spec_url Url to an openAPI specification
 #' @param redoc_options A named list of options for Redoc. See

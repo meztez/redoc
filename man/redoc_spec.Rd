@@ -21,7 +21,7 @@ large string containing the contents of \code{\link{redoc_index}()} with
 }
 \description{
 Produces the content for a \code{index.html} file that will attempt to access a
-provided API path.
+provided OpenAPI Specification URL.
 }
 \examples{
 if (interactive()) {
