@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>ReDoc</title>
+  <!-- needed for adaptive design -->
+  <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="./fonts.css" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <redoc id="redoc-container"></redoc>
+    <script src="./redoc.standalone.js"> </script>
+    <script>
+      Redoc.init('https://redocly.github.io/redoc/openapi.yaml', {},
+      document.getElementById('redoc-container'))
+    </script>
+  </body>
+</html>

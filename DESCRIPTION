@@ -1,0 +1,23 @@
+Package: redoc
+Type: Package
+Title: Generates 'Redoc' documentation from an OAS Compliant API
+Version: 2.0.0.29
+Authors@R: c(
+    person("Bruno", "Tremblay", email = "openr@neoxone.com", role = c("aut", "cre")),
+    person(family = "Rebilly", role = c("aut", "cph")),
+    person(family = "The Montserrat Project Authors", role = "cph",
+           comment = "https://github.com/JulietaUla/Montserrat"),
+    person(family = "Google Inc.", role = "cph",
+           comment = "https://fonts.google.com")
+    )
+Maintainer: Bruno Tremblay <openr@neoxone.com>
+Description: A collection of 'HTML', 'JavaScript', 'CSS' and fonts
+  assets that generate 'Redoc' documentation from an OAS compliant API:
+  <https://redoc.ly/redoc/>.
+License: MIT + file LICENSE | Apache License 2.0
+Imports: jsonlite
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/meztez/redoc
+BugReports: https://github.com/meztez/redoc/issues
+RoxygenNote: 7.1.0
