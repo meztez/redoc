@@ -52,7 +52,6 @@ redoc_index <- function() {
 #'   redoc_spec("https://docs.docker.com/engine/api/v1.38.yaml",
 #'    redoc_options = list(scrollYOffset = 250, disableSearch = TRUE))
 #' }
-#' @importFrom jsonlite toJSON
 #' @export
 #' @rdname redoc_spec
 redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml",
@@ -60,6 +59,6 @@ redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml"
   index_file <- redoc_index()
   index_txt <- paste0(readLines(index_file), collapse = "\n")
   index_txt <- sub("https://redocly\\.github\\.io/redoc/openapi\\.yaml", spec_url, index_txt)
-  index_txt <- sub("\\{\\}", toJSON(redoc_options, auto_unbox = TRUE), index_txt)
+  index_txt <- sub("\\{\\}", jsonlite::toJSON(redoc_options, auto_unbox = TRUE), index_txt)
   index_txt
 }
