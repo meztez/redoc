@@ -4,6 +4,8 @@ Title: Generates 'Redoc' Documentation from an 'OpenAPI' Specification
 Version: 2.0.0.29
 Authors@R: c(
     person("Bruno", "Tremblay", email = "openr@neoxone.com", role = c("aut", "cre")),
+    person("Barret", "Schloerke", email = "barret@rstudio.com", role = "ctb",
+           comment = c(ORCID = "0000-0001-9986-114X")),
     person(family = "Rebilly", role = c("aut", "cph")),
     person(family = "The Montserrat Project Authors", role = "cph",
            comment = "https://github.com/JulietaUla/Montserrat"),

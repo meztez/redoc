@@ -6,3 +6,4 @@ README.Rmd
 ^\.travis\.yml$
 ^\.lintr$
 cran-comments.md
+^\.github$

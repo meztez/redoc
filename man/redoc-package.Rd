@@ -34,6 +34,7 @@ Authors:
 
 Other contributors:
 \itemize{
+  \item Barret Schloerke \email{barret@rstudio.com} (\href{https://orcid.org/0000-0001-9986-114X}{ORCID}) [contributor]
   \item  The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat) [copyright holder]
   \item  Google Inc. (https://fonts.google.com) [copyright holder]
 }

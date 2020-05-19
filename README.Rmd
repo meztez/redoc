@@ -6,8 +6,11 @@ output:
     fig_height: 5
 ---
 
+<!-- badges: start -->
 [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/redoc)](https://cran.r-project.org/package=redoc)
-[![Travis-CI Build Status](https://travis-ci.org/meztez/redoc.svg?branch=master)](https://travis-ci.org/meztez/redoc)
+[![R build status](https://github.com/meztez/redoc/workflows/R-CMD-check/badge.svg)](https://github.com/meztez/redoc/actions)
+[![RStudio community](https://img.shields.io/badge/community-shiny-blue?style=social&logo=rstudio&logoColor=75AADB)](https://community.rstudio.com/tag/redoc)
+<!-- badges: end -->
 
 Redoc is a collection of ‘HTML’, ‘JavaScript’, ‘CSS’ and fonts assets that generate ‘Redoc’ documentation from an OpenAPI Specification.
 
