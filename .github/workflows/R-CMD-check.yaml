@@ -161,15 +161,3 @@ jobs:
 
       - name: Redoc
         run: Rscript scripts/download_redoc_ui.R
-
-      - name: Check Redoc
-        run: |
-          if [ -n "$(git status --porcelain)" ]
-          then
-            git status --porcelain
-            >&2 echo "Please regenerate the redoc output and commit the updates."
-            >&2 echo "The above files changed when we generated the redoc dist folder by calling './scripts/download_redoc_ui.R'. This most often occurs when redoc updates it's version."
-            exit 1
-          else
-            echo "No difference detected; redoc dist is current."
-          fi
