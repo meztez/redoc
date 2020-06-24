@@ -65,7 +65,7 @@ redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml"
 
 plumber_mount_interface <- function() {
   if (requireNamespace("plumber", quietly = TRUE)) {
-    plumber::mountInterface(
+    plumber::mount_interface(
       list(
         package = "redoc",
         name = "redoc",
