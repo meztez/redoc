@@ -62,3 +62,27 @@ redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml"
   index_txt <- sub("\\{\\}", jsonlite::toJSON(redoc_options, auto_unbox = TRUE), index_txt)
   index_txt
 }
+
+plumber_mount_interface <- function() {
+  if (requireNamespace("plumber", quietly = TRUE)) {
+    plumber::mountInterface(
+      list(
+        package = "redoc",
+        name = "redoc",
+        index = function(redoc_options = structure(list(), names = character()), ...) {
+          redoc::redoc_spec(
+            spec_url = "\' + window.location.origin + window.location.pathname.replace(/\\(__redoc__\\\\/|__redoc__\\\\/index.html\\)$/, '') + 'openapi.json' + \'",
+            redoc_options = redoc_options
+          )
+        },
+        static = function(...) {
+          redoc::redoc_path()
+        }
+      )
+    )
+  }
+}
+
+.onLoad <- function(...) {
+  plumber_mount_interface()
+}
