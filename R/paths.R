@@ -63,9 +63,9 @@ redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml"
   index_txt
 }
 
-plumber_mount_interface <- function() {
+plumber_add_ui <- function() {
   if (requireNamespace("plumber", quietly = TRUE)) {
-    plumber::mount_interface(
+    plumber::add_ui(
       list(
         package = "redoc",
         name = "redoc",
@@ -84,5 +84,5 @@ plumber_mount_interface <- function() {
 }
 
 .onLoad <- function(...) {
-  plumber_mount_interface()
+  plumber_add_ui()
 }
