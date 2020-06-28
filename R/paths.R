@@ -43,19 +43,21 @@ redoc_index <- function() {
 #' provided OpenAPI Specification URL.
 #'
 #' @param spec_url Url to an openAPI specification
-#' @param redoc_options A named list of options for Redoc. See
+#' @param ... Additional options for Redoc. See
 #' \url{https://github.com/Redocly/redoc/blob/master/README.md#redoc-options-object}
 #' @return large string containing the contents of \code{\link{redoc_index}()} with
 #'   the appropriate speicification path changed to the \code{spec_url} value.
 #' @examples
 #' if (interactive()) {
 #'   redoc_spec("https://docs.docker.com/engine/api/v1.38.yaml",
-#'    redoc_options = list(scrollYOffset = 250, disableSearch = TRUE))
+#'              scrollYOffset = 250,
+#'              disableSearch = TRUE)
 #' }
 #' @export
 #' @rdname redoc_spec
 redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml",
-                       redoc_options = structure(list(), names = character())) {
+                       ...) {
+  redoc_options <- list(...)
   index_file <- redoc_index()
   index_txt <- paste0(readLines(index_file), collapse = "\n")
   index_txt <- sub("https://redocly\\.github\\.io/redoc/openapi\\.yaml", spec_url, index_txt)
@@ -69,10 +71,10 @@ plumber_add_ui <- function() {
       list(
         package = "redoc",
         name = "redoc",
-        index = function(redoc_options = structure(list(), names = character()), ...) {
+        index = function(...) {
           redoc::redoc_spec(
             spec_url = "\' + window.location.origin + window.location.pathname.replace(/\\(__redoc__\\\\/|__redoc__\\\\/index.html\\)$/, '') + 'openapi.json' + \'",
-            redoc_options = redoc_options
+            ...
           )
         },
         static = function(...) {
