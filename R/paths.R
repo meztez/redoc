@@ -67,7 +67,15 @@ redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml"
 
 plumber_add_ui <- function() {
   if (requireNamespace("plumber", quietly = TRUE)) {
-    plumber::add_ui(
+    add_ui <- tryCatch(
+      plumber::add_ui,
+      error = function(err) {
+        function(...) {
+          return()
+          }
+        }
+      )
+    add_ui(
       list(
         package = "redoc",
         name = "redoc",
