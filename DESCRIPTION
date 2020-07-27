@@ -1,7 +1,7 @@
 Package: redoc
 Type: Package
 Title: Generates 'Redoc' Documentation from an 'OpenAPI' Specification
-Version: 2.0.0.30
+Version: 2.0.0.35
 Authors@R: c(
     person("Bruno", "Tremblay", email = "openr@neoxone.com", role = c("aut", "cre")),
     person("Barret", "Schloerke", email = "barret@rstudio.com", role = "ctb",
@@ -23,4 +23,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/meztez/redoc
 BugReports: https://github.com/meztez/redoc/issues
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1

@@ -1,3 +1,8 @@
+# redoc 2.0.0.35
+
+- Adds support for Redoc 2.0.0-rc.35
+
+
 # redoc 2.0.0.30
 
 - Adds support for Redoc 2.0.0-rc.30

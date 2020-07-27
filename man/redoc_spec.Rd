@@ -4,15 +4,12 @@
 \alias{redoc_spec}
 \title{Redoc Index File with OpenAPI Path}
 \usage{
-redoc_spec(
-  spec_url = "https://redocly.github.io/redoc/openapi.yaml",
-  redoc_options = structure(list(), names = character())
-)
+redoc_spec(spec_url = "https://redocly.github.io/redoc/openapi.yaml", ...)
 }
 \arguments{
 \item{spec_url}{Url to an openAPI specification}
 
-\item{redoc_options}{A named list of options for Redoc. See
+\item{...}{Additional options for Redoc. See
 \url{https://github.com/Redocly/redoc/blob/master/README.md#redoc-options-object}}
 }
 \value{
@@ -26,6 +23,7 @@ provided OpenAPI Specification URL.
 \examples{
 if (interactive()) {
   redoc_spec("https://docs.docker.com/engine/api/v1.38.yaml",
-   redoc_options = list(scrollYOffset = 250, disableSearch = TRUE))
+             scrollYOffset = 250,
+             disableSearch = TRUE)
 }
 }

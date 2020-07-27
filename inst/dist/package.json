@@ -1,6 +1,6 @@
 {
   "name": "redoc",
-  "version": "2.0.0-rc.30",
+  "version": "2.0.0-rc.35",
   "description": "ReDoc",
   "repository": {
     "type": "git",
@@ -147,12 +147,12 @@
     "marked": "^0.7.0",
     "memoize-one": "~5.1.1",
     "mobx-react": "6.1.5",
-    "openapi-sampler": "1.0.0-beta.15",
+    "openapi-sampler": "^1.0.0-beta.16",
     "perfect-scrollbar": "^1.4.0",
     "polished": "^3.4.4",
     "prismjs": "^1.19.0",
     "prop-types": "^15.7.2",
-    "react-dropdown": "^1.7.0",
+    "react-dropdown-aria": "^2.0.6",
     "react-tabs": "^3.1.0",
     "slugify": "^1.4.0",
     "stickyfill": "^1.1.1",
