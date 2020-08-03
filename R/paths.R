@@ -76,19 +76,16 @@ plumber_register_ui <- function() {
         }
       )
     register_ui(
-      list(
-        package = "redoc",
-        name = "redoc",
-        index = function(...) {
-          redoc::redoc_spec(
-            spec_url = "\' + window.location.origin + window.location.pathname.replace(/\\(__redoc__\\\\/|__redoc__\\\\/index.html\\)$/, '') + 'openapi.json' + \'",
-            ...
-          )
-        },
-        static = function(...) {
-          redoc::redoc_path()
-        }
-      )
+      name = "redoc",
+      index = function(...) {
+        redoc::redoc_spec(
+          spec_url = "\' + window.location.origin + window.location.pathname.replace(/\\(__redoc__\\\\/|__redoc__\\\\/index.html\\)$/, '') + 'openapi.json' + \'",
+          ...
+        )
+      },
+      static = function(...) {
+        redoc::redoc_path()
+      }
     )
   }
 }
