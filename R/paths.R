@@ -72,14 +72,14 @@ plumber_docs <- function() {
     name = "redoc",
     index = function(...) {
       redoc::redoc_spec(
-        spec_url = "\' + window.location.origin + window.location.pathname.replace(/\\(__redoc__\\\\/|__redoc__\\\\/index.html\\)$/, '') + 'openapi.json' + \'",
+        spec_url = "\' + window.location.origin + window.location.pathname.replace(/\\(__docs__\\\\/|__docs__\\\\/index.html\\)$/, '') + 'openapi.json' + \'",
         ...
       )
     },
     static = function(...) {
       redoc::redoc_path()
     }
-  )  
+  )
 }
 
 .onLoad <- function(...) {
