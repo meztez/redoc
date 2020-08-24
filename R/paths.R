@@ -65,31 +65,36 @@ redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml"
   index_txt
 }
 
-plumber_register_ui <- function() {
-  if (requireNamespace("plumber", quietly = TRUE)) {
-    register_ui <- tryCatch(
-      plumber::register_ui,
-      error = function(err) {
-        function(...) {
-          return()
-          }
-        }
+
+
+plumber_docs <- function() {
+  list(
+    name = "redoc",
+    index = function(...) {
+      redoc::redoc_spec(
+        spec_url = "\' + window.location.origin + window.location.pathname.replace(/\\(__docs__\\\\/|__docs__\\\\/index.html\\)$/, '') + 'openapi.json' + \'",
+        ...
       )
-    register_ui(
-      name = "redoc",
-      index = function(...) {
-        redoc::redoc_spec(
-          spec_url = "\' + window.location.origin + window.location.pathname.replace(/\\(__redoc__\\\\/|__redoc__\\\\/index.html\\)$/, '') + 'openapi.json' + \'",
-          ...
-        )
-      },
-      static = function(...) {
-        redoc::redoc_path()
-      }
-    )
-  }
+    },
+    static = function(...) {
+      redoc::redoc_path()
+    }
+  )
 }
 
 .onLoad <- function(...) {
-  plumber_register_ui()
+  plumber_register_docs <- function() {
+    tryCatch({
+      do.call(plumber::register_docs, plumber_docs())
+    }, error = function(e) {
+      message("Error registering redoc docs. Error: ", e)
+    })
+  }
+
+  setHook(packageEvent("plumber", "onLoad"), function(...) {
+    plumber_register_docs()
+  })
+  if ("plumber" %in% loadedNamespaces()) {
+    plumber_register_docs()
+  }
 }
