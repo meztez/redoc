@@ -1,7 +1,7 @@
 Package: redoc
 Type: Package
 Title: Generates 'Redoc' Documentation from an 'OpenAPI' Specification
-Version: 2.0.0.35
+Version: 2.0.0.45
 Authors@R: c(
     person("Bruno", "Tremblay", email = "openr@neoxone.com", role = c("aut", "cre")),
     person("Barret", "Schloerke", email = "barret@rstudio.com", role = "ctb",
