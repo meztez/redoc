@@ -18,7 +18,7 @@ Description: A collection of 'HTML', 'JavaScript', 'CSS' and fonts
    <https://redoc.ly/redoc/>.
 License: MIT + file LICENSE | Apache License 2.0
 Imports: jsonlite
-Suggests: plumber (>= 0.5)
+Suggests: plumber (>= 1.0)
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/meztez/redoc

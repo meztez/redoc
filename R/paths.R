@@ -82,15 +82,16 @@ plumber_docs <- function() {
   )
 }
 
-.onLoad <- function(...) {
-  plumber_register_docs <- function() {
-    tryCatch({
-      do.call(plumber::register_docs, plumber_docs())
-    }, error = function(e) {
-      message("Error registering redoc docs. Error: ", e)
-    })
-  }
+plumber_register_docs <- function() {
+  tryCatch({
+    do.call(plumber::register_docs, plumber_docs())
+  }, error = function(e) {
+    packageStartupMessage("Error registering redoc docs. Error: ", e)
+    NULL
+  })
+}
 
+.onLoad <- function(...) {
   setHook(packageEvent("plumber", "onLoad"), function(...) {
     plumber_register_docs()
   })
