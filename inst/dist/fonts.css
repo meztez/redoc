@@ -2,35 +2,35 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: local('Montserrat Light'), local('Montserrat-Light'), url('./s/montserrat/v15/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf') format('truetype');
+  src: url('./s/montserrat/v15/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('./s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf') format('truetype');
+  src: url('./s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('./s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf') format('truetype');
+  src: url('./s/montserrat/v15/JTURjIg1_i6t8kCHKm45_dJE3gnD-w.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url('./s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf') format('truetype');
+  src: url('./s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url('./s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf') format('truetype');
+  src: url('./s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url('./s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf') format('truetype');
+  src: url('./s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf') format('truetype');
 }

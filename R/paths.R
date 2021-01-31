@@ -44,7 +44,7 @@ redoc_index <- function() {
 #'
 #' @param spec_url Url to an openAPI specification
 #' @param ... Additional options for Redoc. See
-#' \url{https://github.com/Redocly/redoc/blob/master/README.md#redoc-options-object}
+#' \url{https://github.com/Redocly/redoc#redoc-options-object}
 #' @return large string containing the contents of \code{\link{redoc_index}()} with
 #'   the appropriate speicification path changed to the \code{spec_url} value.
 #' @examples
