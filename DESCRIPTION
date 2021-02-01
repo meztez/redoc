@@ -6,12 +6,7 @@ Authors@R: c(
     person("Bruno", "Tremblay", email = "openr@neoxone.com", role = c("aut", "cre")),
     person("Barret", "Schloerke", email = "barret@rstudio.com", role = "ctb",
            comment = c(ORCID = "0000-0001-9986-114X")),
-    person(family = "Rebilly", role = c("aut", "cph")),
-    person(family = "The Montserrat Project Authors", role = "cph",
-           comment = "https://github.com/JulietaUla/Montserrat"),
-    person(family = "Google Inc.", role = "cph",
-           comment = "https://fonts.google.com")
-    )
+    person(family = "Rebilly", role = c("aut", "cph")))
 Maintainer: Bruno Tremblay <openr@neoxone.com>
 Description: A collection of 'HTML', 'JavaScript', 'CSS' and fonts
   assets that generate 'Redoc' documentation from an 'OpenAPI' Specification:
