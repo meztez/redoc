@@ -1,4 +1,4 @@
-Copyright (c) 2021, Bruno Tremblay and Rebilly
+Copyright (c) 2022, Bruno Tremblay and Rebilly, Inc
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
