@@ -14,7 +14,7 @@ output:
 
 `redoc` is a collection of `HTML`, `JavaScript`, `CSS` and fonts assets that generate `Redoc` documentation from an OpenAPI Specification.
 
-The main purpose of this package is to enable package authors to create APIs that are compatible with [redoc.ly](https://redoc.ly/redoc/) and [openapis.org](https://www.openapis.org/).
+The main purpose of this package is to enable package authors to create APIs that are compatible with [redoc.ly](https://redocly.com/redoc/) and [openapis.org](https://www.openapis.org/).
 
 Package authors providing web interfaces can serve the static files from `redoc_path()` using [httpuv](https://github.com/rstudio/httpuv) or [fiery](https://github.com/thomasp85/fiery). As a start, we can also browse them by running
 
@@ -74,5 +74,5 @@ The full set of `Redoc` configuration options is supported.
 
 To learn more about `Redoc` visit:
 
-* [Redoc](https://redoc.ly/redoc/)
+* [Redoc](https://redocly.com/redoc/)
 * [Redoc configuration options](https://github.com/Redocly/redoc#redoc-options-object)

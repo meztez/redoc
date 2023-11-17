@@ -10,11 +10,11 @@ redoc_path()
 Retrieves the path to redoc resources.
 }
 \examples{
-
+\dontrun{
 if (interactive()) {
   browseURL(redoc_path())
 } else {
   print(paste("You can explore redoc resources under: ", redoc_path()))
 }
-
+}
 }

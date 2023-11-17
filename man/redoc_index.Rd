@@ -10,11 +10,11 @@ redoc_index()
 Retrieves the path to the redoc index file.
 }
 \examples{
-
+\dontrun{
 if (interactive()) {
   browseURL(redoc_index())
 } else {
   print(paste("You can use redoc under: ", redoc_index()))
 }
-
+}
 }

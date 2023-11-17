@@ -1,23 +1,22 @@
 ## Test environments
-* local Windows 10 x64 build 18362 install, R 4.0.0
-* ubuntu 18.04 (oldrel, release, devel) (on travis-ci)
-* ubuntu 16.04 (release) (on travis-ci)
-* macOS (oldrel, release) (on travis-ci)
-* win-builder (devel and release)
+- R-hub windows-x86_64-devel (r-devel)
+- R-hub ubuntu-gcc-release (r-release)
+- R-hub fedora-clang-devel (r-devel)
 
 ## R CMD check results
-There were no ERRORs or WARNINGs.
+❯ On windows-x86_64-devel (r-devel)
+  checking for non-standard things in the check directory ... NOTE
+  Found the following files/directories:
+    ''NULL''
 
-There was 1 NOTEs.
+❯ On windows-x86_64-devel (r-devel)
+  checking for detritus in the temp directory ... NOTE
+    'lastMiKTeXException'
 
-New submission
+❯ On ubuntu-gcc-release (r-release), fedora-clang-devel (r-devel)
+  checking HTML version of manual ... NOTE
+  Skipping checking HTML validation: no command 'tidy' found
 
-This is my first submission.
+0 errors ✔ | 0 warnings ✔ | 3 notes ✖
 
-This package does mostly the same thing than package
-`swagger` but using `Redoc` instead. My intent is to
-provide alternatives to `plumber` package user. Same
-as the `FastAPI` python framework does.
-
-## Downstream dependencies
-None.
+* This is an update release.

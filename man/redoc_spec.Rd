@@ -21,9 +21,11 @@ Produces the content for a \code{index.html} file that will attempt to access a
 provided OpenAPI Specification URL.
 }
 \examples{
+\dontrun{
 if (interactive()) {
   redoc_spec("https://docs.docker.com/engine/api/v1.38.yaml",
              scrollYOffset = 250,
              disableSearch = TRUE)
+}
 }
 }

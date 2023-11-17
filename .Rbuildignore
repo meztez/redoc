@@ -5,6 +5,8 @@ README.Rmd
 ^scripts
 ^\.travis\.yml$
 ^\.lintr$
+^tools
 cran-comments.md
 ^\.github$
 ^LICENSE\.md$
+^cran-comments\.md$

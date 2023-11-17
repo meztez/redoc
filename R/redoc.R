@@ -4,9 +4,9 @@
 #' that generate Redoc documentation from an OpenAPI Specification.
 #'
 #' The main purpose of this package is to enable package authors to create
-#' APIs that are compatible with \url{https://redoc.ly/redoc/}
+#' APIs that are compatible with \url{https://redocly.com/redoc/}
 #' and \url{https://www.openapis.org/}.
 #'
-#' To learn more about Redoc visit: \url{https://redoc.ly/redoc/}
+#' To learn more about Redoc visit: \url{https://redocly.com/redoc/}
 #'
 "_PACKAGE"

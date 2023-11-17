@@ -10,7 +10,7 @@ Authors@R: c(
 Maintainer: Bruno Tremblay <openr@neoxone.com>
 Description: A collection of 'HTML', 'JavaScript', 'CSS' and fonts
   assets that generate 'Redoc' documentation from an 'OpenAPI' Specification:
-   <https://redoc.ly/redoc/>.
+   <https://redocly.com/redoc/>.
 License: MIT + file LICENSE | Apache License 2.0
 Imports: jsonlite
 Suggests: 

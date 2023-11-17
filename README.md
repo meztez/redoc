@@ -14,7 +14,7 @@ community](https://img.shields.io/badge/community-plumber-blue?style=social&logo
 that generate `Redoc` documentation from an OpenAPI Specification.
 
 The main purpose of this package is to enable package authors to create
-APIs that are compatible with [redoc.ly](https://redoc.ly/redoc/) and
+APIs that are compatible with [redoc.ly](https://redocly.com/redoc/) and
 [openapis.org](https://www.openapis.org/).
 
 Package authors providing web interfaces can serve the static files from
@@ -79,6 +79,6 @@ The full set of `Redoc` configuration options is supported.
 
 To learn more about `Redoc` visit:
 
--   [Redoc](https://redoc.ly/redoc/)
+-   [Redoc](https://redocly.com/redoc/)
 -   [Redoc configuration
     options](https://github.com/Redocly/redoc#redoc-options-object)
