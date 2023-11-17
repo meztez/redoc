@@ -55,6 +55,7 @@ redoc_index <- function() {
 #' }
 #' @export
 #' @rdname redoc_spec
+#' @importFrom jsonlite toJSON
 redoc_spec <- function(spec_url = "https://redocly.github.io/redoc/openapi.yaml",
                        ...) {
   redoc_options <- list(...)

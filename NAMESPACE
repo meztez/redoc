@@ -3,3 +3,4 @@
 export(redoc_index)
 export(redoc_path)
 export(redoc_spec)
+importFrom(jsonlite,toJSON)
