@@ -1,3 +1,8 @@
+# redoc 2.0.0.75
+
+- Adds support for Redoc 2.0.0-rc.75
+
+
 # redoc 2.0.0.72
 
 - Adds support for Redoc 2.0.0-rc.72
