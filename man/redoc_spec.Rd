@@ -7,14 +7,14 @@
 redoc_spec(spec_url = "https://redocly.github.io/redoc/openapi.yaml", ...)
 }
 \arguments{
-\item{spec_url}{Url to an openAPI specification}
+\item{spec_url}{Url to an OpenAPI specification}
 
 \item{...}{Additional options for Redoc. See
 \url{https://github.com/Redocly/redoc#redoc-options-object}}
 }
 \value{
 large string containing the contents of \code{\link{redoc_index}()} with
-  the appropriate speicification path changed to the \code{spec_url} value.
+  the appropriate specification path changed to the \code{spec_url} value.
 }
 \description{
 Produces the content for a \code{index.html} file that will attempt to access a

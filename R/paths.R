@@ -42,11 +42,11 @@ redoc_index <- function() {
 #' Produces the content for a \code{index.html} file that will attempt to access a
 #' provided OpenAPI Specification URL.
 #'
-#' @param spec_url Url to an openAPI specification
+#' @param spec_url Url to an OpenAPI specification
 #' @param ... Additional options for Redoc. See
 #' \url{https://github.com/Redocly/redoc#redoc-options-object}
 #' @return large string containing the contents of \code{\link{redoc_index}()} with
-#'   the appropriate speicification path changed to the \code{spec_url} value.
+#'   the appropriate specification path changed to the \code{spec_url} value.
 #' @examples
 #' \dontrun{
 #' if (interactive()) {
