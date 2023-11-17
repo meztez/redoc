@@ -19,4 +19,4 @@
 
 0 errors ✔ | 0 warnings ✔ | 3 notes ✖
 
-* This is an update release.
+* This is an update release. Version match the underlying js library version.
