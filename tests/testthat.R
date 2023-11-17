@@ -1,4 +1,5 @@
 library(testthat)
-library(rapidoc)
+library(plumber)
+library(redoc)
 
-test_check("rapidoc")
+test_check("redoc")
